@@ -92,9 +92,13 @@ text-decoration: underline;
 
 }
 #logo {
-  width: 120px;
+  width: 45px;
+
 }
 
+.logo {
+  flex: 0 0 150px;
+}
 
 
 /*entrada 1*/
