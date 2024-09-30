@@ -1,0 +1,705 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuentes y estilos básicos */
+body {
+  font-family: 'Gowun Batang', serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #f5c96b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.post {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f5c96b;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.header {
+  grid-area: cabeza;
+
+}
+.main {
+
+  grid-area: principal;
+}
+.aside {
+grid-area: alado;
+}
+.footer {
+  grid-area: pie;
+}
+
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+
+}
+
+/*links de entradas*/
+.link-entrada {
+  color: #020e1d; 
+text-decoration: underline;
+
+
+}
+
+
+
+
+/*entrada 1*/
+
+body {
+  font-family: 'Gowun Batang', serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 0 10px; 
+}
+
+.headerc1 {
+  background: #ff7bae; 
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 1rem;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "principal principal lado"
+    "pie pie pie"
+     ;
+    }
+
+
+header {
+    grid-area: cabeza;
+
+}
+main {
+
+    grid-area: principal;
+}
+aside{
+ grid-area: lado;
+    /* grid-area: 1/ 2/ 3/ 4/; */
+}
+footer {
+    grid-area: pie;
+}
+
+main {
+  flex: 3;
+  background-color: white;
+  padding: 20px;
+  margin-right: 20px; /* Espacio entre el main y el aside */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+  flex: 1; /* Menor espacio comparado con el main */
+  background-color: #ffffff; /* Color de fondo para el aside */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.footerc1 {
+  text-align: center;
+  padding: 20px;
+  background: #ff7bae; 
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.post img {
+  max-width: 50%;
+  border-radius: 8px; 
+  margin: 20px 0; 
+  object-fit: cover;
+}
+
+.post iframe {
+  width: 100%; 
+  height: auto; 
+  margin: 20px 0; 
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/*entrada 2*/
+
+body {
+  font-family: 'Gowun Batang', serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 0 10px; 
+}
+
+.headerc2 {
+  background: #d07bf1; 
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 1rem;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "principal principal lado"
+    "pie pie pie"
+     ;
+    }
+
+
+header {
+    grid-area: cabeza;
+
+}
+main {
+
+    grid-area: principal;
+}
+aside{
+ grid-area: lado;
+    /* grid-area: 1/ 2/ 3/ 4/; */
+}
+footer {
+    grid-area: pie;
+}
+
+main {
+  flex: 3;
+  background-color: white;
+  padding: 20px;
+  margin-right: 20px; 
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+  flex: 1; 
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.footerc2 {
+  text-align: center;
+  padding: 20px;
+  background: #d07bf1; 
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.post img {
+  max-width: 50%;
+  border-radius: 8px; 
+  margin: 20px 0; 
+  object-fit: cover;
+}
+
+.post iframe {
+  width: 100%; 
+  height: auto; 
+  margin: 20px 0; 
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+/*entrada 3*/
+
+body {
+  font-family: 'Gowun Batang', serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 0 10px; 
+}
+
+.headerc3 {
+  background: #4cacaf; 
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 1rem;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "principal principal lado"
+    "pie pie pie"
+     ;
+    }
+
+
+header {
+    grid-area: cabeza;
+
+}
+main {
+
+    grid-area: principal;
+}
+aside{
+ grid-area: lado;
+    /* grid-area: 1/ 2/ 3/ 4/; */
+}
+footer {
+    grid-area: pie;
+}
+
+main {
+  flex: 3;
+  background-color: white;
+  padding: 20px;
+  margin-right: 20px; 
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+  flex: 1; 
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.footerc3 {
+  text-align: center;
+  padding: 20px;
+  background: #4cacaf; 
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.post img {
+  max-width: 50%;
+  border-radius: 8px; 
+  margin: 20px 0; 
+  object-fit: cover;
+}
+
+.post iframe {
+  width: 100%; 
+  height: auto; 
+  margin: 20px 0; 
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+/*entrada 4*/
+
+body {
+  font-family: 'Gowun Batang', serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 0 10px; 
+}
+
+.headerc4 {
+  background: #89f17b; 
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 1rem;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "principal principal lado"
+    "pie pie pie"
+     ;
+    }
+
+
+header {
+    grid-area: cabeza;
+
+}
+main {
+
+    grid-area: principal;
+}
+aside{
+ grid-area: lado;
+    /* grid-area: 1/ 2/ 3/ 4/; */
+}
+footer {
+    grid-area: pie;
+}
+
+main {
+  flex: 3;
+  background-color: white;
+  padding: 20px;
+  margin-right: 20px; 
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+  flex: 1; 
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.footerc4 {
+  text-align: center;
+  padding: 20px;
+  background: #89f17b; 
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.post img {
+  max-width: 50%;
+  border-radius: 8px; 
+  margin: 20px 0; 
+  object-fit: cover;
+}
+
+.post iframe {
+  width: 100%; 
+  height: auto; 
+  margin: 20px 0; 
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+/*entrada 5*/
+
+body {
+  font-family: 'Gowun Batang', serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 0 10px; 
+}
+
+.headerc5 {
+  background: #f0ff6d; 
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 1rem;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "principal principal lado"
+    "pie pie pie"
+     ;
+    }
+
+
+header {
+    grid-area: cabeza;
+
+}
+main {
+
+    grid-area: principal;
+}
+aside{
+ grid-area: lado;
+    /* grid-area: 1/ 2/ 3/ 4/; */
+}
+footer {
+    grid-area: pie;
+}
+
+main {
+  flex: 3;
+  background-color: white;
+  padding: 20px;
+  margin-right: 20px; 
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+  flex: 1; 
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.footerc5 {
+  text-align: center;
+  padding: 20px;
+  background: #f0ff6d; 
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.post img {
+  max-width: 50%;
+  border-radius: 8px; 
+  margin: 20px 0; 
+  object-fit: cover;
+}
+
+.post iframe {
+  width: 100%; 
+  height: auto; 
+  margin: 20px 0; 
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+

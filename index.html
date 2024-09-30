@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimo trabajo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Mi Blog Personal</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
+  <header class="borde header">
+      <h1>Bienvenido a Mi Blog</h1>
+      <nav>
+          <ul>
+              <li><a href="contactos.html">Contactos </a></li>
+              <li><a href="preguntas.html">Preguntas </a></li>
+              <li><a href="play.html">??????? </a></li>
+          </ul>
+      </nav>
+  </header>
+
+<main class="borde main">
+  <main class="container">
     
+      <article id="entrada1" class="post">
+          <a href="entrada1.html" class="link-entrada"><h2>Entrada 1</h2></a>
+          <p>Hola! Esta es una pequeña introducción sobre la idea del blog en general</p>
+      </article>
+
+      <article id="entrada2" class="post">
+          <a href="entrada2.html" class="link-entrada"><h2>Entrada 2</h2></a>
+          <p>Aquí explico mejor mi descenso a la locura</p>
+      </article>
+
+      <article id="entrada3" class="post">
+        <a href="entrada3.html" class="link-entrada"><h2>Entrada 3</h2></a>
+          <p>Experiencias más memorables del trimestre según lo que recuerdo</p>
+      </article>
+
+      <article id="entrada4" class="post">
+        <a href="entrada4.html" class="link-entrada"><h2>Entrada 4</h2></a>
+          <p>Lo que aprendí de cada materia y cada tarea</p>
+      </article>
+
+      <article id="entrada5" class="post">
+        <a href="entrada5.html" class="link-entrada"><h2>Entrada 5</h2></a>
+          <p>Reflexiones finales sobre lo que vivi o cómo lo viví</p>
+      </article>
+  </main>
+</main>
+  <footer class="borde footer">
+      <p>© 2024 Mi Blog Personal. Todos los derechos reservados.</p>
+  </footer>
+  
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script> 
+  ScrollReveal().reveal('.header',{delay: 250,easing:'ease-in' });
+  ScrollReveal().reveal('.main',{delay:500, scale: 0.80});
+  ScrollReveal().reveal('.lado',{delay:800, rotate:{x: 20, z:20},});
+  ScrollReveal().reveal('.footer',{delay:1000, distance: '150%', origin: 'bottom'});
+  </script>
+
+
+
+
 </body>
 </html>
