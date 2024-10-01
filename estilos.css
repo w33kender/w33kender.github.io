@@ -601,7 +601,7 @@ body {
 
 .headerc5 {
   background: #f0ff6d; 
-  color: white;
+  color: rgb(49, 46, 46);
   padding: 20px;
   text-align: center;
 }
@@ -675,7 +675,7 @@ aside {
   text-align: center;
   padding: 20px;
   background: #f0ff6d; 
-  color: white;
+  color: rgb(49, 46, 46);
   position: relative;
   bottom: 0;
   width: 100%;
